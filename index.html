@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-primary">
         <div class="container">
             <a class="navbar-brand h1 mb-0" href="#">Curso</a>
-
+            <!--botão menu mobile-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -59,7 +59,49 @@
         </div>
     </nav>
 
-    
+    <!--slide carrousel -->
+    <div class="carousel slide" id="carrouselSite" data-ride="carousel">
+        <!--indicadores do slide-->
+        <ol class="carousel-indicators">
+            <li data-target="carouselSite" data-slide-to="0" class="active"></li>
+            <li data-target="carouselSite" data-slide-to="1"></li>
+            <li data-target="carouselSite" data-slide-to="2"></li>
+        </ol>
+        <!--imagens do slide carrousel-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagens/1.jpg" class="img-fluid d-block">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>O que é Lorem Ipsum</h3>
+                    <p>simplesmente uma simulação de texto da indústria tipográfica e de impressos</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/2.jpg" class="img-fluid d-block">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Porque nós o usamos</h3>
+                    <p>simplesmente uma simulação de texto da indústria tipográfica e de impressos</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/3.jpg" class="img-fluid d-block">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>De onde ele vem?</h3>
+                    <p>simplesmente uma simulação de texto da indústria tipográfica e de impressos</p>
+                </div>
+            </div>
+        </div>
+        <!--botões de controles do slider-->
+        <a class="carousel-control-prev" href="#carrouselSite" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carrouselSite" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Avançar</span>
+        </a>
+
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.js"></script>
