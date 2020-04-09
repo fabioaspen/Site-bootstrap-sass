@@ -101,9 +101,9 @@
             <span class="carousel-control-next-icon"></span>
             <span class="sr-only">Avançar</span>
         </a>
-    </div>
+    </!DOCTYPE>
     
-    <!--Scrollspy-->
+    <!--ScrollSpy-->
 
     <div class="container">
         <div class="row">
@@ -318,6 +318,73 @@
         </div>
     </div>
 
+    <!--formulário-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center my-5">
+                <h1 class="display-4"><i class="fa fa-paper-plane text-primary" aria-hidden="true"></i>Maecenas id gravida</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+            <div class="col-sm-12 col-md-10 col-lg-8">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <label for="inputNome">Seu nome</label>
+                            <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="inputSobrenome">Sobre nome</label>
+                            <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobre nome">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-sm-12">
+                            <label for="inputEnd">Seu endereço</label>
+                            <input type="text" class="form-control" id="inputEnd" placeholder="Endereçe completo">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <label for="inputCidade">Sua cidade</label>
+                            <input type="text" class="form-control" id="inputCidade" placeholder="Sua cidade">
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <label for="inputEstado">Seu estado</label>
+                            <select id="inputEstado" class="form-control">
+                                <option selected>Escolha...</option>
+                                <option>...</option>
+                                <option>...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-sm-2">
+                            <label for="inputCep">CEP</label>
+                            <input type="text" id="inputCep" class="form-control" placeholder="Seu CEP">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-sm-12">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox">Desejo receber novidades por email.
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-sm-12">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            
+                            <!--botão popover-->
+                            <a tabindex="0" class="btn btn-secondary" role="button" data-toggle="popover"   data-trigger="focus" title="Popover dispensável" data-content="Aqui vai algum tipo de conteúdo. Muito da hora, né?!">Popover dispensável</a>
+                        </div>
+                    </div>   
+                </form>
+            </div>
+        </div>
+    </div>
+
     <!--modal-->
     <div class="modal fade" id="siteModal" tabindex="w-100 role="dialog">
         <div class="modal-dialog modal-lg" role="document">
@@ -354,12 +421,18 @@
             </div>
         </div>
     </div>
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    
+    <!--ativar popover-->
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+    
 </body>
 </html>
